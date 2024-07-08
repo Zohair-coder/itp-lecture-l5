@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+	<html class="sl-root decks export offline loaded">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover, minimal-ui">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<link rel="manifest" href='data:application/manifest+json,{"display": "standalone", "name": "Introduction to Python - L5"}' />
+		<title>Introduction to Python - L5</title>
+
+
+		<link rel="stylesheet" type="text/css" href="lib/offline-v2.css">
+
+
+
+		<!-- User CSS -->
+		<style id="user-css-output" type="text/css">
+			.reveal .monospace-font h1,
+.reveal .monospace-font h2,
+.reveal .monospace-font h3 {
+  font-family: monospace;
+}
+
+		</style>
+	</head>
+	<body class="reveal-viewport theme-font-helvetica theme-color-black-mint">
+		<div class="reveal">
+			<div class="slides">
+				<section data-background-image="introduction-to-python-l5/5575a831fd35ef978963ce97fc5c4737" data-background-opacity="0.2" data-background-transition="fade" data-id="250c8f5063c8be10c0164afd81052765" data-transition="fade"><div class="sl-block" data-block-type="text" style="width: 837px; left: 61.5px; top: 192px; height: auto;" data-block-id="c538a75ae95b1376efb84fca8ffe8004"><div class="sl-block-style" style="z-index: 10; transform: rotate(0deg); filter: drop-shadow(rgba(28, 235, 123, 0.7) 0px 0px 6px);"><div class="sl-block-content monospace-font" data-placeholder-tag="h1" style="z-index: 10; color: rgb(28, 235, 123); font-size: 150%; line-height: 1.04;" data-has-line-height="" data-placeholder-text="Text"><h1>{python}</h1></div></div></div>
+
+<div class="sl-block" data-block-type="text" style="width: 837px; left: 61.5px; top: 419.943px; height: auto;" data-name="text-d18e72" data-block-id="8df9aa563317b80ff2a934359208861e"><div class="sl-block-content" data-placeholder-tag="p" style="z-index: 11; text-align: center; color: rgb(164, 194, 244); font-size: 110%;" data-placeholder-text="Text"><p>Introduction to Python - Lecture 5</p></div></div>
+
+
+
+
+<div class="sl-block" data-block-type="text" style="width: 837px; left: 61.5px; top: 473.349px; height: auto;" data-block-id="e985c32242913eca398b5eb1cea763d2" data-name="text-6fe9d5"><div class="sl-block-content" data-placeholder-tag="p" style="z-index: 12; text-align: center; color: rgb(164, 194, 244); font-size: 110%;" data-placeholder-text="Text"><p><span style="font-size:0.7em">Zohair ul Hasan</span></p></div></div></section><section data-transition="fade" data-auto-animate="" data-id="8a1bae0b551485a58bd65b3e3233b200"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 61.6793px;" data-name="text-76ddde" data-block-id="d277266b8ea833c0ff554b6197a97361"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>Recap</h2></div></div>
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 749.023px; left: 114.735px; top: 193.443px;" data-name="text-ec8c15" data-block-id="6e8cfa5173ab7dfddd22d467085bbf66"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; line-height: 1.95;" data-has-line-height=""><ul>
+	<li>Functions are the primary way to divide your code into logical groups</li>
+	<li>Code in one function cannot directly affect the values of variables in other functions</li>
+	<li>Functions can be thought of as "black boxes"</li>
+	<li>Exception handling (try-catch)</li>
+</ul></div></div></section><section data-transition="fade" data-auto-animate="" data-id="64ce559439f7bccb1385d1c557a448fe"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 33.5171px;" data-name="text-76ddde" data-block-id="404c0aa6c549559f0d36aa47f9cf3994"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>Recap</h2></div></div>
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 330.5px;" data-name="text-4939e8" data-block-id="c514144f32dd3d3e43b08a99f1bbbaf4"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;"><p>Yesterday's tasks</p></div></div></section><section data-transition="fade" data-auto-animate="" data-id="2a568fa6f76bdba52bfdfd026209cc1b"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 189.79px; top: 276px;" data-name="text-76ddde" data-block-id="61b855ec6a7c0148cc896d1b198657a3"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>My Collatz Sequence Solution</h2></div></div>
+
+</section><section data-transition="fade" data-auto-animate="" data-id="21b1f89e4b6b0763f5506beb4b844f98"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 33.5171px;" data-name="text-76ddde" data-block-id="76eb1fb645d98a40e8cfa7a67bc6161a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>Today's Lecture</h2></div></div>
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 330.5px;" data-name="text-4939e8" data-block-id="9007a2caf7056e2a112e540ff9c0ec8b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;"><p>Lists (and Tuples)</p></div></div></section><section data-transition="fade" data-auto-animate="" data-id="d971feaeb6a9fd0c062d029354fb27f1"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 33.5171px;" data-name="text-76ddde" data-block-id="42b10c27619f635bfae4097df562052b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>The List Datatype</h2></div></div>
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 298.955px;" data-name="text-4939e8" data-block-id="06e0630782ce0552008561bcc526b300"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;"><p>Lists and tuples can contain multiple values</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 397.941px;" data-block-id="17ed250b4b3d1be7feaabe2e3f3e7cb5" data-name="text-e9ec1e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;"><p>They can even contain other lists/tuples</p></div></div></section><section data-transition="fade" data-auto-animate="" data-id="8fe98ce880057c03d4d2df489db9cb31"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 33.5171px;" data-name="text-76ddde" data-block-id="4cade4add0a5e4cd9c3bd325713ca0da"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>The List Datatype</h2></div></div>
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 342.465px;" data-name="text-4939e8" data-block-id="b1bf57dd3d4c52507b594906a0cf878f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;"><p>A list is a <em>value</em> that can contain multiple values in an ordered sequence</p></div></div></section><section data-transition="fade" data-auto-animate="" data-id="91681075729afec843ccd294ca86f945"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 33.5171px;" data-name="text-76ddde" data-block-id="1c85ef1fd938c4868a7d814a69873339"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>The List Datatype</h2></div></div>
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 229.338px;" data-name="text-4939e8" data-block-id="ce4471bf4ef58c976a2b368968b0398f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p>Lists look like this:</p>
+
+<p><code>['cat', 'bat', 'rat', 'elephant']</code></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 365.308px;" data-name="text-bb73bc" data-block-id="248470110dcd1bbda27fc0929a60856b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;"><p>They start with an opening square bracket '<code>['</code> and end with a closing square bracket '<code>]'</code></p></div></div></section><section data-transition="fade" data-auto-animate="" data-id="079c77d4f656966cbef66bf6babe35fb"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 33.5171px;" data-name="text-76ddde" data-block-id="4111e7fe9eb197e3e90f07d0cd2096d5"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>The List Datatype</h2></div></div>
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 229.338px;" data-name="text-4939e8" data-block-id="ed9a534eff07297828daacf1dc98d770"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p>Lists look like this:</p>
+
+<p><code>['cat', 'bat', 'rat', 'elephant']</code></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 365.308px;" data-name="text-bb73bc" data-block-id="3677aed34516e9bc42ce49a6a604eeb8"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;"><p>The values inside lists are often called "items" or "elements"</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 187.614px; top: 501.278px;" data-block-id="60445c8515e6c2ba4fb98641f9ac32e6" data-name="text-72b12b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;"><p>Items are separated with commas</p></div></div></section><section data-transition="fade" data-auto-animate="" data-id="223a8665a81ebdba3067c17cbfb356d3"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 33.5171px;" data-name="text-76ddde" data-block-id="fbc9bb2ce3d82eadaa5516e1b755a5bd"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>The List Datatype</h2></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 640.321px; height: 367.441px; left: 131.014px; top: 190.21px;" data-name="code-d1d4ef" data-block-id="61d0cbcea979061ff0a36ca82f8553cd"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre style="font-size: 20px; line-height: 24px; tab-size: 4;" class="python"><code data-line-numbers="">&gt;&gt;&gt; [1, 2, 3]
+[1, 2, 3]
+&gt;&gt;&gt; ['cat', 'bat', 'rat', 'elephant']
+['cat', 'bat', 'rat', 'elephant']
+&gt;&gt;&gt; ['hello', 3.1415, True, None, 42]
+['hello', 3.1415, True, None, 42]
+&gt;&gt;&gt; spam = ['cat', 'bat', 'rat', 'elephant']
+&gt;&gt;&gt; spam
+['cat', 'bat', 'rat', 'elephant']
+&gt;&gt;&gt; []
+[]</code></pre></div></div></section><section data-transition="fade" data-auto-animate="" data-id="e891385166ded328e548c134faddf6ef"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 33.5171px;" data-name="text-76ddde" data-block-id="28711665a5d94c199973279942ce92e2"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>The List Datatype</h2></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 640.321px; height: 367.441px; left: 132.102px; top: 153.226px;" data-name="code-d1d4ef" data-block-id="f080b8484a6bf0d01a2bca255dd31ff8"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre style="font-size: 20px; line-height: 24px; tab-size: 4;" class="python"><code data-line-numbers="">&gt;&gt;&gt; spam = ['cat', 'bat', 'rat', 'elephant']
+&gt;&gt;&gt; spam[0]
+'cat'
+&gt;&gt;&gt; spam[1]
+'bat'
+&gt;&gt;&gt; spam[2]
+'rat'
+&gt;&gt;&gt; spam[3]
+'elephant'
+&gt;&gt;&gt; spam[4]
+Traceback (most recent call last):
+  File "&lt;stdin&gt;", line 1, in &lt;module&gt;
+IndexError: list index out of range</code></pre></div></div>
+<div class="sl-block" data-block-type="image" style="width: 458.009px; height: 98.6708px; left: 231.262px; top: 552.48px; min-width: 1px; min-height: 1px;" data-name="image-061f3a" data-block-id="4d62c9434985c340ac5eff31045e9307"><div class="sl-block-content" style="z-index: 12;"><img class="" data-natural-width="311" data-natural-height="67" data-lazy-loaded="" data-src="introduction-to-python-l5/9d2db96e7ea466dace085e166a1fa13c.png"></div></div></section><section data-transition="fade" data-auto-animate="" data-id="c7f1d268f337b246e935732784a6150a"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 33.5171px;" data-name="text-76ddde" data-block-id="d073bb84457ba758fdeb4422c604cd12"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>The List Datatype</h2></div></div>
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 162.596px; top: 330px;" data-name="text-64b15d" data-block-id="456244241c3a405a7ac2a372d1c48c7f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;"><p><code>spam[0]</code></p></div></div>
+<div class="sl-block" data-block-type="drawing" style="width: 54.2059px; height: 71.8114px; left: 486.945px; top: 251.189px;" data-name="drawing-f7f75f" data-block-id="de1ed2bc231586cac88f1993b7e33dfa"><div class="sl-block-content" data-points="539.71 252.63,536.07 254.3,532.39 257.39,528.72 260.91,525.52 264.34,522.06 268.49,518.6 273.09,515.19 278.03,512.05 282.81,509.44 287.12,507.25 291.41,505.48 295.74,504.04 299.92,502.72 303.66,501.57 306.81,500.77 309.1,499.94 311.69,499.18 313.76,498.33 315.83,497.23 317.77,496.88 319.87,496.52 321.96,494.69 319.79,493.57 316.47,492.39 314.06,490.98 312.29,489.3 309.94,488.06 307.93,488.88 310.31,490.24 312.97,491.64 315.63,492.93 317.59,494.62 319.24,496.32 320.38,498.13 321.28,500.31 320.53,502.65 318.71,504.2 317.39,505.89 316.28,507.67 314.44,508.7 312.58" data-timestamp="1720450222774" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="none" width="100%" height="100%" viewbox="486.94549560546875 251.18856811523438 54.2059326171875 71.81143188476562"><path fill="rgb(164, 194, 244)" d="M 539.5241062441308 254.3199944844445 Q 539.52 254.32 537.87 255.13 536.21 255.93 534.44 257.3 532.67 258.66 530.9 260.33 529.12 262 527.49 263.77 525.86 265.54 524.16 267.61 522.46 269.68 520.75 271.97 519.04 274.26 517.37 276.68 515.71 279.1 514.19 281.43 512.67 283.76 511.4 285.92 510.12 288.08 509.06 290.2 508.01 292.32 507.15 294.43 506.3 296.55 505.58 298.58 504.86 300.6 504.21 302.43 503.56 304.26 503.03 305.78 502.5 307.3 502.13 308.54 501.76 309.77 501.39 311 501.01 312.24 500.64 313.33 500.27 314.42 499.83 315.48 499.39 316.55 498.67 319.25 497.95 321.95 497.73 322.33 497.51 322.7 497.12 322.88 496.72 323.06 496.3 322.97 495.87 322.88 495.58 322.56 495.29 322.23 494.95 321.63 494.6 321.02 493.42 318.9 492.24 316.78 491.65 315.67 491.06 314.57 490.38 313.67 489.69 312.77 488.42 310.89 487.15 309.01 487.03 308.61 486.9 308.21 487.03 307.82 487.16 307.43 487.5 307.18 487.84 306.94 488.25 306.94 488.67 306.95 488.85 307.28 489.03 307.62 489.71 308.93 490.4 310.24 491 311.45 491.6 312.67 492.26 313.9 492.92 315.13 493.58 316.04 494.24 316.95 495.16 317.73 496.09 318.5 497.59 318.93 499.08 319.35 500.5 318.43 501.91 317.5 502.71 316.85 503.52 316.2 504.38 315.54 505.24 314.88 505.77 314.08 506.31 313.28 507.21 313.14 508.11 313 508.4 313.87 508.68 314.74 507.86 315.16 507.04 315.57 506.51 314.83 505.97 314.09 506.62 313.44 507.27 312.8 508.01 313.34 508.75 313.87 507.25 315.9 505.75 317.92 504.65 318.82 503.56 319.71 502.31 320.61 501.07 321.5 499.64 321.91 498.2 322.32 497.01 321.96 495.82 321.61 494.85 320.95 493.88 320.29 492.97 319.4 492.07 318.5 491.34 317.45 490.62 316.4 489.92 315.13 489.21 313.86 488.52 312.5 487.83 311.14 487.44 309.96 487.05 308.77 486.97 308.49 486.9 308.21 487.03 307.82 487.16 307.43 487.5 307.18 487.84 306.94 488.25 306.94 488.67 306.95 489 307.19 489.34 307.44 490.59 309.32 491.84 311.19 492.6 312.26 493.36 313.33 494 314.57 494.65 315.8 495.17 317.11 495.69 318.42 496.4 320.11 497.12 321.8 497.32 322.25 497.51 322.7 497.12 322.88 496.72 323.06 496.3 322.97 495.87 322.88 495.58 322.56 495.29 322.23 495.25 321.8 495.2 321.37 495.62 319.42 496.04 317.47 496.51 316.48 496.98 315.5 497.43 314.51 497.89 313.53 498.3 312.5 498.72 311.47 499.16 310.25 499.61 309.03 500.08 307.81 500.55 306.6 501.11 305.09 501.67 303.59 502.32 301.76 502.97 299.94 503.71 297.87 504.44 295.8 505.33 293.61 506.22 291.43 507.31 289.25 508.4 287.06 509.7 284.87 510.99 282.67 512.53 280.32 514.06 277.96 515.75 275.51 517.44 273.07 519.18 270.74 520.92 268.41 522.65 266.3 524.39 264.19 526.06 262.37 527.73 260.56 529.52 258.79 531.31 257.02 533.17 255.36 535.03 253.69 536.67 252.68 538.3 251.67 538.7 251.49 539.1 251.31 539.32 251.24 539.54 251.18 539.77 251.19 539.99 251.2 540.21 251.28 540.42 251.36 540.6 251.5 540.78 251.64 540.91 251.83 541.03 252.02 541.1 252.24 541.16 252.46 541.15 252.69 541.14 252.91 541.06 253.13 540.98 253.34 540.84 253.52 540.7 253.7 540.51 253.83 540.32 253.95 539.92 254.14 Z"></path></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 162.722px; left: 505.346px; top: 219.33px;" data-name="text-855833" data-block-id="3e4051ba8044a19382b1602c78b87c94"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;"><p>Index</p></div></div>
+<div class="sl-block" data-block-type="drawing" style="width: 70.7363px; height: 52.9366px; left: 466.75px; top: 328.4px;" data-name="drawing-11ade0" data-block-id="d547b203d58dd1b23e978d27ece77eb1"><div class="sl-block-content" data-points="468.91 333.28,468.91 336.17,468.91 338.33,468.91 340.7,468.91 343.07,468.69 345.44,468.32 347.82,468.15 350.01,468.15 352.15,468.15 356.01,468.15 359.15,468.15 361.59,468.15 363.97,468.3 366.12,468.73 368.21,469.1 371.09,469.74 373.78,470.31 376.06,471.4 378.1,472.63 379.8,474.74 379.93,477.03 379.48,479.28 379.34,481.41 379.34,485.04 379.34,489.62 379.34,494.63 379.34,500.02 379.34,505.71 379.34,510.97 379.34,515.45 379.34,519.25 379.34,522.8 379.54,525.83 379.75,528.19 379.94,530.32 380.13,533.37 380.13,535.69 380.13,536.64 377.75,536.24 375.03,534.73 372.44,533.22 369.03,532.65 366.53,532.46 363.62,532.46 361.15,532.46 357.94,532 355.69,531.5 352.87,531.12 349.55,530.27 346.75,529.47 344.43,528.5 341.89,527.57 339.88,526.54 337.41,525.55 335.02,524.53 332.72,522.76 331.5,520.61 331.19,518.11 331.19,514.76 331.53,511.76 331.53,508.02 331.53,503.78 331.53,499.31 331.53,495.52 331.31,492.26 331.1,489.61 330.99,487.32 330.82,483.8 330.45,480.26 330.42,476.92 330.42,473.49 330.23,470.76 329.58,468.22 329.37,466.19 329.22" data-timestamp="1720450251564" style="z-index: 14;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="none" width="100%" height="100%" viewbox="466.75 328.3998107910156 70.73626708984375 52.936614990234375"><path fill="rgb(164, 194, 244)" d="M 470.3995540893555 333.91218749999996 Q 470.4 333.91 470.38 335.14 470.37 336.36 470.36 337.48 470.36 338.6 470.36 339.78 470.35 340.96 470.32 342.15 470.29 343.35 470.17 344.59 470.05 345.83 469.89 347.03 469.73 348.22 469.66 349.27 469.59 350.33 469.57 351.55 469.55 352.77 469.48 354.53 469.42 356.29 469.41 357.81 469.41 359.33 469.42 360.58 469.44 361.83 469.48 362.99 469.51 364.15 469.67 365.54 469.82 366.92 470.18 369.04 470.53 371.16 470.82 372.42 471.11 373.67 471.44 374.76 471.78 375.84 472.4 376.68 473.03 377.51 474.37 377.93 475.71 378.34 477.56 378.14 479.41 377.93 480.68 377.93 481.95 377.94 483.81 378.01 485.66 378.08 487.94 378.17 490.22 378.27 492.74 378.3 495.26 378.34 497.96 378.34 500.67 378.34 503.45 378.34 506.23 378.34 508.79 378.34 511.36 378.34 513.56 378.34 515.77 378.34 517.69 378.36 519.6 378.38 521.36 378.47 523.12 378.55 524.6 378.61 526.08 378.67 527.28 378.72 528.48 378.77 529.65 378.82 530.83 378.86 532.19 378.7 533.54 378.54 534.37 377.79 535.2 377.04 534.93 376.03 534.65 375.02 534.03 373.79 533.4 372.56 532.77 370.93 532.13 369.3 531.8 367.88 531.46 366.45 531.34 364.97 531.22 363.49 531.2 362.11 531.18 360.74 531.13 359.3 531.09 357.85 530.87 356.71 530.65 355.56 530.42 354.11 530.2 352.66 529.97 351.08 529.74 349.5 529.36 348.21 528.97 346.92 528.55 345.74 528.12 344.56 527.65 343.39 527.18 342.21 526.7 341.16 526.22 340.11 525.71 338.89 525.2 337.68 524.7 336.5 524.21 335.32 523.49 334.36 522.77 333.4 521.42 333.01 520.07 332.62 518.87 332.63 517.66 332.65 516.11 332.72 514.56 332.8 512.92 332.79 511.29 332.79 509.4 332.74 507.5 332.7 505.38 332.64 503.27 332.59 501.12 332.54 498.96 332.48 497.07 332.4 495.18 332.31 493.59 332.25 491.99 332.19 490.67 332.17 489.35 332.14 488.04 332.06 486.72 331.98 485.01 331.82 483.31 331.67 481.6 331.63 479.9 331.59 478.22 331.56 476.53 331.54 474.85 331.4 473.17 331.26 471.74 331.03 470.3 330.79 469.11 330.71 467.92 330.62 467.35 330.04 466.78 329.47 467.27 328.81 467.75 328.16 468.47 328.54 469.19 328.91 468.93 329.68 468.67 330.45 467.87 330.32 467.07 330.18 467.08 329.37 467.09 328.56 468.91 328.48 470.73 328.41 472.06 328.68 473.38 328.95 474.97 329.08 476.56 329.22 478.25 329.24 479.94 329.26 481.72 329.28 483.5 329.3 485.2 329.42 486.91 329.54 488.19 329.67 489.47 329.79 490.8 329.9 492.12 330.01 493.7 330.14 495.29 330.26 497.14 330.37 498.99 330.48 501.13 330.48 503.27 330.47 505.38 330.42 507.5 330.36 509.38 330.31 511.27 330.26 512.82 330.23 514.37 330.2 516.01 330.04 517.64 329.89 519.08 329.88 520.52 329.86 521.83 330.14 523.15 330.41 524.25 331.2 525.35 331.98 526.01 333.12 526.67 334.25 527.17 335.44 527.67 336.64 528.17 337.83 528.67 339.03 529.15 340.14 529.62 341.25 530.1 342.48 530.57 343.72 530.98 344.96 531.4 346.21 531.81 347.65 532.21 349.1 532.48 350.67 532.75 352.24 532.98 353.68 533.22 355.11 533.43 356.43 533.63 357.74 533.69 359.23 533.75 360.72 533.75 362.01 533.75 363.31 533.83 364.62 533.91 365.92 534.15 367.16 534.39 368.4 535.05 369.91 535.7 371.41 536.46 372.95 537.21 374.5 537.43 376.12 537.65 377.74 537.01 379.09 536.38 380.45 535.03 380.88 533.69 381.3 532.18 381.33 530.66 381.36 529.47 381.25 528.29 381.15 527.11 381.01 525.92 380.87 524.47 380.73 523.01 380.58 521.29 380.48 519.58 380.38 517.67 380.36 515.77 380.34 513.56 380.34 511.36 380.34 508.79 380.34 506.23 380.34 503.45 380.34 500.67 380.34 497.96 380.34 495.26 380.34 492.74 380.38 490.22 380.41 487.94 380.51 485.66 380.6 483.82 380.67 481.98 380.75 480.78 380.77 479.58 380.79 478.52 380.84 477.46 380.9 476.19 381.05 474.92 381.2 473.58 380.96 472.25 380.71 471.33 379.83 470.41 378.94 469.8 377.79 469.19 376.65 468.84 375.46 468.49 374.28 468.18 372.93 467.87 371.58 467.64 370.21 467.41 368.84 467.22 367.65 467.02 366.46 466.94 365.33 466.86 364.19 466.86 363.01 466.86 361.83 466.88 360.58 466.89 359.33 466.89 357.81 466.88 356.29 466.82 354.52 466.76 352.74 466.75 351.44 466.75 350.13 466.83 348.99 466.92 347.85 467.07 346.7 467.22 345.56 467.32 344.43 467.43 343.3 467.45 342.13 467.47 340.96 467.46 339.78 467.46 338.6 467.46 337.48 467.45 336.36 467.44 335.14 467.42 333.91 467.42 333.6 467.42 333.28 467.46 333.05 467.49 332.82 467.6 332.61 467.7 332.4 467.87 332.24 468.03 332.07 468.24 331.97 468.45 331.86 468.68 331.83 468.91 331.79 469.14 331.83 469.37 331.86 469.58 331.97 469.79 332.07 469.95 332.24 470.12 332.4 470.22 332.61 470.33 332.82 470.36 333.05 470.4 333.28 470.4 333.6 Z"></path></svg></div></div></section><section data-transition="fade" data-auto-animate="" data-id="738efa633ef357c17ad6f1756cb4ad75"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 33.5171px;" data-name="text-76ddde" data-block-id="51376e009f84cde075791d593d3ac3a9"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>The List Datatype</h2></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 752.36px; height: 293.473px; left: 123.4px; top: 215.229px;" data-name="code-10680e" data-block-id="cdcf0eaa647d87f805d1ca0bd3f7e867"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre class="python" style="font-size: 20px; line-height: 24px; tab-size: 4;"><code data-line-numbers="">&gt;&gt;&gt; ['cat', 'bat', 'rat', 'elephant'][3]
+'elephant'
+&gt;&gt;&gt; spam = ['cat', 'bat', 'rat', 'elephant']
+&gt;&gt;&gt; 'Hello, ' + spam[0]
+'Hello, cat'
+&gt;&gt;&gt; 'The ' + spam[1] + ' ate the ' + spam[0] + '.'
+'The bat ate the cat.'</code></pre></div></div></section><section data-transition="fade" data-auto-animate="" data-id="473fa03e2e229653e3e23e2de1a6acd1"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 33.5171px;" data-name="text-76ddde" data-block-id="cf0f3c3f8c637f8f62651a222060aa76"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>The List Datatype</h2></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 752.36px; height: 293.473px; left: 123.4px; top: 215.229px;" data-name="code-10680e" data-block-id="208aa5fef2ffb33dac9b57bd6913688a"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre class="python" style="font-size: 20px; line-height: 24px; tab-size: 4;"><code data-line-numbers="">&gt;&gt;&gt; spam = [['cat', 'bat'], [10, 20, 30, 40, 50]]
+&gt;&gt;&gt; spam[0]
+['cat', 'bat']
+&gt;&gt;&gt; spam[0][1]
+'bat'
+&gt;&gt;&gt; spam[1][4]
+50</code></pre></div></div></section><section data-transition="fade" data-auto-animate="" data-id="cfff8d3a068b9851bff23aca37bb9551"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 33.5171px;" data-name="text-76ddde" data-block-id="49ac63dab55506d9d87c996a0ac95d05"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>Negative Indices</h2></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 779.554px; height: 293.473px; left: 87.504px; top: 241.335px;" data-name="code-10680e" data-block-id="a34626a28b269537f120d1ca9831e2ba"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre class="python" style="font-size: 20px; line-height: 24px; tab-size: 4;"><code data-line-numbers="">&gt;&gt;&gt; spam = ['cat', 'bat', 'rat', 'elephant']
+&gt;&gt;&gt; spam[-1]
+'elephant'
+&gt;&gt;&gt; spam[-3]
+'bat'
+&gt;&gt;&gt; 'The ' + spam[-1] + ' is afraid of the ' + spam[-3] + '.'
+'The elephant is afraid of the bat.'</code></pre></div></div></section><section data-transition="fade" data-auto-animate="" data-id="39b688a411986aa1de141fb3464e13df"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 33.5171px;" data-name="text-76ddde" data-block-id="854e6965b62a6c0fc4c1e36fd03c5472"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>Slicing</h2></div></div>
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 173.862px;" data-name="text-64c63a" data-block-id="228636860a9608d300fc131d6274fa78"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;"><p>Just as an index can get a single value from a list, a slice can get several values from a list, in the form of a new list.</p></div></div>
+<div class="sl-block" data-block-type="code" style="width: 637.057px; height: 292.386px; left: 180px; top: 333.794px;" data-name="code-0fc5df" data-block-id="df568172227fe96f92ce4402e085e417"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 12;"><pre class="python" style="font-size: 20px; line-height: 24px; tab-size: 4;"><code data-line-numbers="">&gt;&gt;&gt; spam = ['cat', 'bat', 'rat', 'elephant']
+&gt;&gt;&gt; spam[0:4]
+['cat', 'bat', 'rat', 'elephant']
+&gt;&gt;&gt; spam[1:3]
+['bat', 'rat']
+&gt;&gt;&gt; spam[0:-1]
+['cat', 'bat', 'rat']</code></pre></div></div></section><section data-transition="fade" data-auto-animate="" data-id="fa1e9195a937a0dc7df488ee140ade2f"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 33.5171px;" data-name="text-76ddde" data-block-id="7e1fa082fe6720264ec18d35098687b6"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>Slicing</h2></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 637.057px; height: 292.386px; left: 180px; top: 203.807px;" data-name="code-0fc5df" data-block-id="4d9d9d978a60b9dfa79f6198d3fc3f8d"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 12;"><pre class="python" style="font-size: 20px; line-height: 24px; tab-size: 4;"><code data-line-numbers="">&gt;&gt;&gt; spam = ['cat', 'bat', 'rat', 'elephant']
+&gt;&gt;&gt; spam[:2]
+['cat', 'bat']
+&gt;&gt;&gt; spam[1:]
+['bat', 'rat', 'elephant']
+&gt;&gt;&gt; spam[:]
+['cat', 'bat', 'rat', 'elephant']</code></pre></div></div></section><section data-transition="fade" data-auto-animate="" data-id="f37b544067be1c4d828234abd24479eb"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 33.5171px;" data-name="text-76ddde" data-block-id="1482ffbb08cf5fac831dd3d796225cfe"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>Length of list</h2></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 472.806px; height: 135.749px; left: 243.597px; top: 282.125px;" data-name="code-0fc5df" data-block-id="13c9a7180b103d76e7e52498b0169deb"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre class="python" style="font-size: 20px; line-height: 24px; tab-size: 4;"><code data-line-numbers="">&gt;&gt;&gt; spam = ['cat', 'dog', 'moose']
+&gt;&gt;&gt; len(spam)
+3</code></pre></div></div></section><section data-transition="fade" data-auto-animate="" data-id="994941211ef80778233c8d9071d6a4f0"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 33.5171px;" data-name="text-76ddde" data-block-id="c681dccc660fdcc4f5f3fed505619423"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>Modifying the list</h2></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 633.794px; height: 310.878px; left: 163.103px; top: 253.843px;" data-name="code-0fc5df" data-block-id="5451946f27499b213e1420c87b52dc46"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre class="python" style="font-size: 20px; line-height: 24px; tab-size: 4;"><code data-line-numbers="">&gt;&gt;&gt; spam = ['cat', 'bat', 'rat', 'elephant']
+&gt;&gt;&gt; spam[1] = 'aardvark'
+&gt;&gt;&gt; spam
+['cat', 'aardvark', 'rat', 'elephant']
+&gt;&gt;&gt; spam[2] = spam[1]
+&gt;&gt;&gt; spam
+['cat', 'aardvark', 'aardvark', 'elephant']
+&gt;&gt;&gt; spam[-1] = 12345
+&gt;&gt;&gt; spam
+['cat', 'aardvark', 'aardvark', 12345]</code></pre></div></div></section><section data-transition="fade" data-auto-animate="" data-id="36928c9810aaec4b1c8a42166692e8aa"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 33.5171px;" data-name="text-76ddde" data-block-id="2ea52f4f5a02df618584dab48d5858c5"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>List Concatenation and Replication</h2></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 633.794px; height: 310.878px; left: 180px; top: 265.808px;" data-name="code-0fc5df" data-block-id="2a5354ee65e9b5d647dd6d5dcedfbc88"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre class="python" style="font-size: 20px; line-height: 24px; tab-size: 4;"><code data-line-numbers="">&gt;&gt;&gt; [1, 2, 3] + ['A', 'B', 'C']
+[1, 2, 3, 'A', 'B', 'C']
+&gt;&gt;&gt; ['X', 'Y', 'Z'] * 3
+['X', 'Y', 'Z', 'X', 'Y', 'Z', 'X', 'Y', 'Z']
+&gt;&gt;&gt; spam = [1, 2, 3]
+&gt;&gt;&gt; spam = spam + ['A', 'B', 'C']
+&gt;&gt;&gt; spam
+[1, 2, 3, 'A', 'B', 'C']</code></pre></div></div></section><section data-transition="fade" data-auto-animate="" data-id="29aec9bdcaf6a6f3e5403a504da6e58b"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 33.5171px;" data-name="text-76ddde" data-block-id="db6d8a18c3ebc3a1e6afdb64c141cd7d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>Deleting list values</h2></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 633.794px; height: 310.878px; left: 180px; top: 265.808px;" data-name="code-0fc5df" data-block-id="bb1a03bd8a0c2bac8bf9a26e03ac0f12"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre class="python" style="font-size: 20px; line-height: 24px; tab-size: 4;"><code data-line-numbers="">&gt;&gt;&gt; spam = ['cat', 'bat', 'rat', 'elephant']
+&gt;&gt;&gt; del spam[2]
+&gt;&gt;&gt; spam
+['cat', 'bat', 'elephant']
+&gt;&gt;&gt; del spam[2]
+&gt;&gt;&gt; spam
+['cat', 'bat']</code></pre></div></div></section><section data-transition="fade" data-auto-animate="" data-id="40095db59601b4f7544d172e8871180d"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 33.5171px;" data-name="text-76ddde" data-block-id="2b3f0879d30827134b201b353db51044"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>Old way of doing things</h2></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 926.341px; height: 559.284px; left: 26.0451px; top: 125.487px;" data-name="code-0fc5df" data-block-id="2a6db4c1cbd6f0ab50b5c0e3be08a57a"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre class="python" style="font-size: 20px; line-height: 24px; tab-size: 4;"><code data-line-numbers="">catName1 = 'Zophie'
+catName2 = 'Pooka'
+catName3 = 'Simon'
+catName4 = 'Lady Macbeth'
+catName5 = 'Fat-tail'
+catName6 = 'Miss Cleo'
+
+print('Enter the name of cat 1:')
+catName1 = input()
+print('Enter the name of cat 2:')
+catName2 = input()
+print('Enter the name of cat 3:')
+catName3 = input()
+print('Enter the name of cat 4:')
+catName4 = input()
+print('Enter the name of cat 5:')
+catName5 = input()
+print('Enter the name of cat 6:')
+catName6 = input()
+print('The cat names are:')
+print(catName1 + ' ' + catName2 + ' ' + catName3 + ' ' + catName4 + ' ' +
+catName5 + ' ' + catName6)</code></pre></div></div></section><section data-transition="fade" data-auto-animate="" data-id="f10ea4683a679b0399f2b9dc7c46969d"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 33.5171px;" data-name="text-76ddde" data-block-id="9c11f9e7079e8c89259fea38c1f0b4a1"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>New way of doing things</h2></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 817.565px; height: 311.275px; left: 71.2175px; top: 247.663px;" data-name="code-0fc5df" data-block-id="07f89dd41dad7817e61103e2782f661f"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre class="python" style="font-size: 20px; line-height: 24px; tab-size: 4;"><code data-line-numbers="|1-8|9-11">catNames = []
+while True:
+    print('Enter the name of cat ' + str(len(catNames) + 1) +
+      ' (Or enter nothing to stop.):')
+    name = input()
+    if name == '':
+        break
+    catNames = catNames + [name]  # list concatenation
+print('The cat names are:')
+for name in catNames:
+    print('  ' + name)</code></pre></div></div></section><section data-transition="fade" data-auto-animate="" data-id="dacdbb9cd51eb4a564181fcf25a4cdc5"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 33.5171px;" data-name="text-76ddde" data-block-id="38b3ebafe4e72155ae8b70de4775fdb5"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>Using <code>for</code> loops with lists</h2></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 465.132px; height: 80.6705px; left: 247.434px; top: 278.665px;" data-name="code-0fc5df" data-block-id="ceacb9ae130981975d8b070d6a90a00e"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre class="python" style="font-size: 20px; line-height: 24px; tab-size: 4;"><code data-line-numbers="|1-8|9-11">for i in range(4):
+    print(i)</code></pre></div></div>
+<div class="sl-block" data-block-type="code" style="width: 161.708px; height: 140.099px; left: 247.434px; top: 382.95px;" data-name="code-b253b2" data-block-id="2989a5b0671651898634204b381ec0f7"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 12;"><pre class="python" style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">Output:
+
+0
+1
+2
+3</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 186.5px;" data-name="text-8a2326" data-block-id="d0c3ffcfbf34784fd88ada7831824cdc"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;"><p>a <code>for</code> loop repeats the code block once for each item in a list value.</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 728.408px; left: 149.225px; top: 546.99px;" data-name="text-abc2e8" data-block-id="c9dd360e6e2255bebb1ce2702ccf2520"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;"><p>This is because the return value from range(4) is a sequence value that Python considers similar to [0, 1, 2, 3]</p></div></div></section><section data-transition="fade" data-auto-animate="" data-id="b557560ac133137d3ba5c5a0402f4f03"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 33.5171px;" data-name="text-76ddde" data-block-id="5c7d0a78baaba1b2f29c604675d7ce44"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>Using <code>for</code> loops with lists</h2></div></div>
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 243.063px;" data-name="text-8a2326" data-block-id="e6f06129955aa2b0c1ed86812544fdb4"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;"><p>The following program has the same output as the previous one:</p></div></div>
+<div class="sl-block" data-block-type="code" style="width: 329.222px; height: 107.467px; left: 315.389px; top: 389.751px;" data-name="code-23ee5c" data-block-id="7a1b9e41a6920c7eb236608f2c70ce66"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 12;"><pre class="python" style="font-size: 20px; line-height: 24px; tab-size: 4;"><code data-line-numbers="">for i in [0, 1, 2, 3]:
+    print(i)</code></pre></div></div></section><section data-transition="fade" data-auto-animate="" data-id="14a09135862f0558d3024c188f154adb"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 33.5171px;" data-name="text-76ddde" data-block-id="ba372774427ea5c2acff711827983e52"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>Using <code>for</code> loops with lists</h2></div></div>
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 243.063px;" data-name="text-8a2326" data-block-id="befb8d7dda28cb1a274079ed476133cd"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;"><p>Using <code>range(len(someList))</code> is a common technique in Python to iterate over the indices of a list</p></div></div>
+<div class="sl-block" data-block-type="code" style="width: 885.065px; height: 234.735px; left: 47.8006px; top: 403.66px;" data-name="code-23ee5c" data-block-id="d038dbba1b06fe10a84108e432b7af6f"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 12;"><pre class="python" style="font-size: 20px; line-height: 24px; tab-size: 4;"><code data-line-numbers="">&gt;&gt;&gt; supplies = ['pens', 'staplers', 'flamethrowers', 'binders']
+&gt;&gt;&gt; for i in range(len(supplies)):
+...     print('Index ' + str(i) + ' in supplies is: ' + supplies[i])
+
+Index 0 in supplies is: pens
+Index 1 in supplies is: staplers
+Index 2 in supplies is: flamethrowers
+Index 3 in supplies is: binders</code></pre></div></div></section><section data-transition="fade" data-auto-animate="" data-id="0ba5ca5f0dcdf36f99bbb4181d5c8860"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 33.5171px;" data-name="text-76ddde" data-block-id="a362637d24ba5a6a9d17f174ccda752d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>The <code>in</code> and <code>not in</code> operators</h2></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 638.144px; height: 227.121px; left: 202.807px; top: 267.69px;" data-name="code-23ee5c" data-block-id="c70078ee7f6651153a3241fdfa057d32"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 12;"><pre class="python" style="font-size: 20px; line-height: 24px; tab-size: 4;"><code data-line-numbers="">&gt;&gt;&gt; 'howdy' in ['hello', 'hi', 'howdy', 'heyas']
+True
+&gt;&gt;&gt; spam = ['hello', 'hi', 'howdy', 'heyas']
+&gt;&gt;&gt; 'cat' in spam
+False
+&gt;&gt;&gt; 'howdy' not in spam
+False
+&gt;&gt;&gt; 'cat' not in spam
+True</code></pre></div></div></section><section data-transition="fade" data-auto-animate="" data-id="f8be32a5b658453025c4a6c047910406"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 33.5171px;" data-name="text-76ddde" data-block-id="62790cd283fbb92213cd637801abb9d5"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>The Multiple Assignment Trick</h2></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 482.595px; height: 134.662px; left: 197.368px; top: 319.669px;" data-name="code-23ee5c" data-block-id="15df042506711a2569a84df1fea0e91e"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre class="python" style="font-size: 20px; line-height: 24px; tab-size: 4;"><code data-line-numbers="">&gt;&gt;&gt; cat = ['fat', 'gray', 'loud']
+&gt;&gt;&gt; size = cat[0]
+&gt;&gt;&gt; color = cat[1]
+&gt;&gt;&gt; disposition = cat[2]</code></pre></div></div>
+<div class="sl-block" data-block-type="code" style="width: 486.946px; height: 86.8px; left: 197.368px; top: 499.331px;" data-block-id="d8ba5faf51dd94759f02514340be3eb9" data-name="code-553e91"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 12;"><pre class="python" style="font-size: 20px; line-height: 24px; tab-size: 4;"><code data-line-numbers="">&gt;&gt;&gt; cat = ['fat', 'gray', 'loud']
+&gt;&gt;&gt; size, color, disposition = cat</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 235.865px;" data-name="text-049899" data-block-id="3ee47c8a27c724cb00ff0eeb29c8b70d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;"><p>Both code blocks are equivalent</p></div></div>
+
+</section><section data-transition="fade" data-auto-animate="" data-id="1930d48c37bbd864acf166addc21b39c"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 33.5171px;" data-name="text-76ddde" data-block-id="9b9cbde4396694d26db2eb26f0d81070"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>The Multiple Assignment Trick</h2></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 762.15px; height: 194.488px; left: 139.716px; top: 315.303px;" data-name="code-e84330" data-block-id="21131cb4909d7f042b54ecde1b349c2e"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre class="python" style="font-size: 20px; line-height: 24px; tab-size: 4;"><code data-line-numbers="">&gt;&gt;&gt; cat = ['fat', 'gray', 'loud']
+&gt;&gt;&gt; size, color, disposition, name = cat
+Traceback (most recent call last):
+  File "&lt;pyshell#84&gt;", line 1, in &lt;module&gt;
+    size, color, disposition, name = cat
+ValueError: not enough values to unpack (expected 4, got 3)</code></pre></div></div></section><section data-transition="fade" data-auto-animate="" data-id="399198ab1719c29a0ce54f9552a625c1"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 33.5171px;" data-name="text-76ddde" data-block-id="332e84687c73214ae8c08d7f0bfc863b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>Using the <code>enumerate()</code> function</h2></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 829.591px; height: 166.207px; left: 61.3975px; top: 312.04px;" data-name="code-e84330" data-block-id="0423a99c2a932b3fde9c2eebc8bbf895"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre class="python" style="font-size: 20px; line-height: 24px; tab-size: 4;"><code data-line-numbers="">&gt;&gt;&gt; supplies = ['pens', 'staplers', 'flamethrowers', 'binders']
+&gt;&gt;&gt; for index, item in enumerate(supplies):
+...     print('Index ' + str(index) + ' in supplies is: ' + item)</code></pre></div></div></section><section data-transition="fade" data-auto-animate="" data-id="aa4d5ff949b0ad2c5748b0decd24b259"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 33.5171px;" data-name="text-76ddde" data-block-id="dda1aedabab5742e90d7bd642c761847"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>Using the <code>enumerate()</code> function</h2></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 829.591px; height: 166.207px; left: 65.2045px; top: 266.897px;" data-name="code-e84330" data-block-id="6f5f1aa449bdccfea26900dc5ef4b441"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre class="python" style="font-size: 20px; line-height: 24px; tab-size: 4;"><code data-line-numbers="">&gt;&gt;&gt; supplies = ['pens', 'staplers', 'flamethrowers', 'binders']
+&gt;&gt;&gt; for index, item in enumerate(supplies):
+...     print('Index ' + str(index) + ' in supplies is: ' + item)</code></pre></div></div>
+<div class="sl-block" data-block-type="code" style="width: 493.473px; height: 150px; left: 233.263px; top: 471.939px;" data-name="code-b06c61" data-block-id="b00e0f3caa564fc5eadb356d02e07c22"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 12;"><pre class="plaintext" style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">Output:
+
+Index 0 in supplies is: pens
+Index 1 in supplies is: staplers
+Index 2 in supplies is: flamethrowers
+Index 3 in supplies is: binders</code></pre></div></div></section><section data-transition="fade" data-auto-animate="" data-id="8a6ad0ea369010601140fa5eedf7d3ce"><div class="sl-block" data-block-type="text" style="height: auto; width: 829.591px; left: 65.2045px; top: 21.5517px;" data-name="text-76ddde" data-block-id="4ea0a5bf7f489e4e2cf05cf2fe823acb"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>Using the <code>random.choice()</code> and <code>random.shuffle()</code> functions</h2></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 548.95px; height: 248.877px; left: 205.525px; top: 307.144px;" data-name="code-e84330" data-block-id="81fd9c7ad515cb7a594c1ab502aeb826"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre class="python" style="font-size: 20px; line-height: 24px; tab-size: 4;"><code data-line-numbers="">&gt;&gt;&gt; import random
+&gt;&gt;&gt; pets = ['Dog', 'Cat', 'Moose']
+&gt;&gt;&gt; random.choice(pets)
+'Dog'
+&gt;&gt;&gt; random.choice(pets)
+'Cat'
+&gt;&gt;&gt; random.choice(pets)
+'Cat'</code></pre></div></div></section><section data-transition="fade" data-auto-animate="" data-id="9c2124505f56bccf4ef80952d56edff3"><div class="sl-block" data-block-type="text" style="height: auto; width: 829.591px; left: 65.2045px; top: 21.5517px;" data-name="text-76ddde" data-block-id="a41559ca7780c020bc6fab1aefa73414"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>Using the <code>random.choice()</code> and <code>random.shuffle()</code> functions</h2></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 612.04px; height: 249.965px; left: 173.98px; top: 306.057px;" data-name="code-e84330" data-block-id="9ff9eaf340202d4baae21fafd5c81a39"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre class="python" style="font-size: 20px; line-height: 24px; tab-size: 4;"><code data-line-numbers="">&gt;&gt;&gt; import random
+&gt;&gt;&gt; people = ['Alice', 'Bob', 'Carol', 'David']
+&gt;&gt;&gt; random.shuffle(people)
+&gt;&gt;&gt; people
+['Carol', 'David', 'Alice', 'Bob']
+&gt;&gt;&gt; random.shuffle(people)
+&gt;&gt;&gt; people
+['Alice', 'David', 'Bob', 'Carol']</code></pre></div></div></section><section data-transition="fade" data-auto-animate="" data-id="05c42d98bd57e24b6bed3e4d22868ea3"><div class="sl-block" data-block-type="text" style="height: auto; width: 829.591px; left: 65.2045px; top: 21.5517px;" data-name="text-76ddde" data-block-id="03b9c274be1790ec7b4d2bb2f2a21745"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>Methods</h2></div></div>
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 311px;" data-name="text-a3f059" data-block-id="2f3206b98cded5a11c61b31f9c627f8d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;"><p>A method is the same thing as a function, except it is “called on” a value.</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 437.18px;" data-block-id="eca77bc22131eae87100bc548e3bdb56" data-name="text-cc4acc"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p style="text-align: left;"><code>spam = ["hello", "one", "two"]</code></p>
+
+<p style="text-align: left;"><code>spam.index("hello")</code></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 133.226px; top: 563.407px;" data-name="text-01c217" data-block-id="d422958412c1abb9079431c4e3219594"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16;"><p>Method</p></div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-5974e4" data-block-id="410ddf293caba06dfe79ded66928f033"><div class="sl-block-content sl-block-group-content" style="transform-origin: 319.343px 550.449px; z-index: 13;">
+<div class="sl-block" data-block-type="drawing" style="width: 49.5033px; height: 51.2867px; left: 300.39px; top: 531.62px;" data-name="drawing-cfbadd" data-block-id="479ac19b3bf1238d7b460991033c2d94"><div class="sl-block-content" data-points="301.89 533.1,301.89 535.27,301.89 537.83,301.89 540.53,301.89 543.56,301.89 547.04,301.89 550.3,301.89 553.49,301.89 555.94,302.38 558.2,303.85 559.97,306.64 562.8,309.57 565.46,312.85 568.4,315.73 570.86,317.97 572.45,320.66 574.07,322.59 574.84,326.23 576.24,330.96 578.03,335.7 579.47,340.42 580.6,344.03 581.48,346.15 581.96,348.46 582.04,350.91 582.04" data-timestamp="1720466802357" style="z-index: 14;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="none" width="100%" height="100%" viewbox="300.3900146484375 531.6199951171875 49.5032958984375 51.28668212890625"><path fill="rgb(164, 194, 244)" d="M 303.391501940918 533.5746875 Q 303.39 533.57 303.39 534.6 303.39 535.62 303.37 536.88 303.35 538.14 303.32 539.52 303.3 540.89 303.26 542.44 303.23 543.99 303.19 545.68 303.15 547.37 303.13 549 303.12 550.63 303.12 552.15 303.12 553.67 303.19 554.87 303.26 556.07 303.87 557.33 304.47 558.58 306.15 560.41 307.83 562.24 309.27 563.62 310.7 565 312.25 566.43 313.8 567.85 315.18 568.99 316.56 570.12 317.75 570.91 318.95 571.69 320.16 572.36 321.37 573.03 322.5 573.48 323.64 573.93 325.46 574.68 327.29 575.43 329.56 576.32 331.83 577.21 334.16 577.9 336.49 578.59 338.71 579.14 340.92 579.69 342.62 580.09 344.31 580.49 345.45 580.67 346.59 580.84 347.8 580.83 349 580.82 349.57 581.33 350.13 581.84 349.72 582.48 349.3 583.12 348.61 582.8 347.91 582.49 348.11 581.76 348.31 581.03 349.07 581.11 349.82 581.19 349.86 581.95 349.9 582.71 348.05 582.85 346.2 582.99 345.02 582.73 343.84 582.47 342.14 582.05 340.44 581.63 338.18 581.07 335.92 580.51 333.53 579.8 331.15 579.09 328.81 578.31 326.48 577.53 324.58 576.85 322.69 576.17 321.45 575.63 320.21 575.08 318.93 574.31 317.65 573.54 316.44 572.64 315.23 571.73 313.84 570.55 312.44 569.37 310.84 567.99 309.23 566.61 307.69 565.26 306.15 563.92 304.71 562.55 303.28 561.19 302.36 559.97 301.43 558.75 301.08 557.49 300.73 556.23 300.7 554.95 300.66 553.67 300.66 552.15 300.66 550.63 300.65 549 300.63 547.37 300.59 545.68 300.55 543.99 300.52 542.44 300.48 540.89 300.46 539.52 300.43 538.14 300.41 536.88 300.39 535.62 300.39 534.6 300.39 533.57 300.39 533.34 300.39 533.1 300.43 532.87 300.46 532.64 300.57 532.43 300.68 532.22 300.84 532.05 301.01 531.89 301.22 531.78 301.43 531.67 301.66 531.64 301.89 531.6 302.12 531.64 302.35 531.67 302.56 531.78 302.77 531.89 302.94 532.05 303.1 532.22 303.21 532.43 303.32 532.64 303.35 532.87 303.39 533.1 303.39 533.34 Z"></path></svg></div></div>
+<div class="sl-block" data-block-type="drawing" style="width: 24.9902px; height: 26.1245px; left: 288.793px; top: 517.991px;" data-name="drawing-bdcacb" data-block-id="06ee1a0ed8a632319a986d39a3c54bc8"><div class="sl-block-content" data-points="298.3 529.71,298.3 531.72,297.45 533.72,295.89 535.76,294.21 537.57,292.95 539.16,291.1 541.28,289.97 543.02,289.89 540.97,291.52 537.61,292.85 535.67,294.88 532.79,297.59 529.13,300.51 525.36,302.84 522.34,304.29 520.38,305.76 518.92,307.79 518.39,309.12 520.28,310.35 522.04,310.98 523.97,310.98 526.01,310.98 528.39,311.94 530.34,313.16 532.23,313.16 534.26" data-timestamp="1720466805644" style="z-index: 15;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="none" width="100%" height="100%" viewbox="288.79296875 517.991455078125 24.99017333984375 26.12445068359375"><path fill="rgb(164, 194, 244)" d="M 299.80174275017845 530.1583018069023 Q 299.8 530.16 299.7 531.14 299.59 532.12 299.07 533.34 298.54 534.57 297.69 535.69 296.84 536.81 296.02 537.74 295.2 538.66 294.5 539.51 293.8 540.36 292.51 542.03 291.22 543.7 290.84 543.92 290.46 544.15 290.03 544.11 289.59 544.07 289.26 543.79 288.93 543.5 288.83 543.07 288.73 542.64 288.9 542 289.08 541.36 289.78 539.16 290.47 536.95 291.26 535.75 292.04 534.55 293.16 533.08 294.27 531.6 295.68 529.83 297.09 528.07 298.5 526.29 299.91 524.51 300.99 523.07 302.08 521.64 302.82 520.61 303.57 519.58 304.55 518.83 305.54 518.08 306.98 518 308.42 517.91 309.33 518.77 310.25 519.63 310.88 520.6 311.51 521.56 311.87 522.7 312.24 523.84 312.31 525.04 312.39 526.25 312.62 527.54 312.85 528.83 313.43 530.41 314 532 313.65 532.86 313.29 533.72 312.39 533.5 311.48 533.29 311.55 532.36 311.63 531.43 312.55 531.36 313.48 531.28 313.7 532.19 313.92 533.09 313.06 533.45 312.2 533.81 311.51 532.46 310.81 531.12 310.31 529.92 309.8 528.73 309.68 527.55 309.55 526.36 309.37 524.87 309.18 523.38 308.39 521.81 307.59 520.25 306.54 520.56 305.49 520.87 304.59 521.88 303.7 522.88 302.6 524.3 301.49 525.73 300.14 527.53 298.79 529.33 297.52 531.17 296.25 533 295.25 534.5 294.24 535.99 293.54 537.06 292.84 538.12 292.23 539.3 291.63 540.48 291.16 541.94 290.68 543.39 290.57 543.77 290.46 544.15 290.03 544.11 289.59 544.07 289.26 543.79 288.93 543.5 288.83 543.07 288.73 542.64 288.9 542.24 289.07 541.84 290.33 540.18 291.58 538.53 292.31 537.65 293.04 536.76 293.78 535.91 294.53 535.05 295.19 534.19 295.85 533.33 296.24 532.56 296.63 531.8 296.72 530.97 296.8 530.14 296.8 529.92 296.8 529.7 296.84 529.47 296.87 529.24 296.98 529.03 297.09 528.82 297.26 528.66 297.42 528.49 297.63 528.38 297.84 528.28 298.08 528.24 298.31 528.21 298.54 528.25 298.77 528.28 298.98 528.39 299.19 528.5 299.35 528.67 299.52 528.83 299.63 529.04 299.73 529.25 299.77 529.49 299.8 529.72 299.8 529.94 Z"></path></svg></div></div>
+</div></div></section><section data-transition="fade" data-auto-animate="" data-id="e5bda2c0928703859ccfd77b986ae242"><div class="sl-block" data-block-type="text" style="height: auto; width: 829.591px; left: 65.2045px; top: 21.5517px;" data-name="text-76ddde" data-block-id="1bd40c79e277d7f3c83bff42090899c3"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>Methods</h2></div></div>
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 311px;" data-name="text-a3f059" data-block-id="36a5722b484c2db0ea8046d94c075011"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;"><p>Each data type has its own set of methods. The list data type, for example, has several useful methods for finding, adding, removing, and otherwise manipulating values in a list.</p></div></div></section><section data-transition="fade" data-auto-animate="" data-id="efb1a0240328f17d2b71b90256f1a434"><div class="sl-block" data-block-type="text" style="height: auto; width: 829.591px; left: 65.2045px; top: 52.0089px;" data-name="text-76ddde" data-block-id="4865e8496cd96687b6894e66f24bbc55"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>The <code>index() </code>method</h2></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 713.744px; height: 343.51px; left: 149.778px; top: 194.561px;" data-name="code-1b81f0" data-block-id="ffff15a2c537413e1c77697bdd2ed9c7"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre class="python" style="font-size: 20px; line-height: 24px; tab-size: 4;"><code data-line-numbers="">&gt;&gt;&gt; spam = ['hello', 'hi', 'howdy', 'heyas']
+&gt;&gt;&gt; spam.index('hello')
+0
+&gt;&gt;&gt; spam.index('heyas')
+3
+&gt;&gt;&gt; spam.index('howdy howdy howdy')
+Traceback (most recent call last):
+  File "&lt;pyshell#31&gt;", line 1, in &lt;module&gt;
+    spam.index('howdy howdy howdy')
+ValueError: 'howdy howdy howdy' is not in list
+&gt;&gt;&gt; spam = ['Zophie', 'Pooka', 'Fat-tail', 'Pooka']
+&gt;&gt;&gt; spam.index('Pooka')
+1</code></pre></div></div></section><section data-transition="fade" data-auto-animate="" data-id="1c907e07748eadad5f948b2a61fcabec"><div class="sl-block" data-block-type="text" style="height: auto; width: 797.229px; left: 65.2045px; top: 52.0089px;" data-name="text-76ddde" data-block-id="c27d0d2c1756fd246e20666b6d789096"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>Adding values to lists with <code>append()</code> and <code>insert()</code> methods</h2></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 638.689px; height: 229.296px; left: 148.69px; top: 326.18px;" data-name="code-1b81f0" data-block-id="9233c81f54449aea0b5a7e66f6680870"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre class="python" style="font-size: 20px; line-height: 24px; tab-size: 4;"><code data-line-numbers="1-4|5-8">&gt;&gt;&gt; spam = ['cat', 'dog', 'bat']
+&gt;&gt;&gt; spam.append('moose')
+&gt;&gt;&gt; spam
+['cat', 'dog', 'bat', 'moose']
+&gt;&gt;&gt; spam = ['cat', 'dog', 'bat']
+&gt;&gt;&gt; spam.insert(1, 'chicken')
+&gt;&gt;&gt; spam
+['cat', 'chicken', 'dog', 'bat']</code></pre></div></div></section><section data-transition="fade" data-auto-animate="" data-id="e0714d74ab2133b581c9795bab652e77"><div class="sl-block" data-block-type="text" style="height: auto; width: 797.229px; left: 65.2045px; top: 52.0089px;" data-name="text-76ddde" data-block-id="9df6fd53b2cd88798d8cb99eb5086466"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>Remove values from lists using the <code>remove()</code> method</h2></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 713.744px; height: 145.539px; left: 106.947px; top: 320.741px;" data-name="code-1b81f0" data-block-id="519e8859b33547aadcebdce03ea8af2e"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre class="python" style="font-size: 20px; line-height: 24px; tab-size: 4;"><code data-line-numbers="">&gt;&gt;&gt; spam = ['cat', 'bat', 'rat', 'elephant']
+&gt;&gt;&gt; spam.remove('bat')
+&gt;&gt;&gt; spam
+['cat', 'rat', 'elephant']</code></pre></div></div></section><section data-transition="fade" data-auto-animate="" data-id="c3ecec64d5f1fe4cefc78c252541f0ac"><div class="sl-block" data-block-type="text" style="height: auto; width: 797.229px; left: 65.2045px; top: 52.0089px;" data-name="text-76ddde" data-block-id="3fbc5e036e28a1090f3aa3549991ad74"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>Remove values from lists using the <code>remove()</code> method</h2></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 713.744px; height: 193.4px; left: 106.947px; top: 320.741px;" data-name="code-1b81f0" data-block-id="dad3db74c6282f9a0e8fb17f554d9a26"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre class="python" style="font-size: 20px; line-height: 24px; tab-size: 4;"><code data-line-numbers="">&gt;&gt;&gt; spam = ['cat', 'bat', 'rat', 'elephant']
+&gt;&gt;&gt; spam.remove('chicken')
+Traceback (most recent call last):
+  File "&lt;pyshell#11&gt;", line 1, in &lt;module&gt;
+    spam.remove('chicken')
+ValueError: list.remove(x): x not in list</code></pre></div></div></section><section data-transition="fade" data-auto-animate="" data-id="897aa9057f66ac78b3bb7dd18c42a4c9"><div class="sl-block" data-block-type="text" style="height: auto; width: 797.229px; left: 65.2045px; top: 52.0089px;" data-name="text-76ddde" data-block-id="49e48b45f352d977819e0244f40c9603"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>Remove values from lists using the <code>remove()</code> method</h2></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 713.744px; height: 193.4px; left: 106.947px; top: 320.741px;" data-name="code-1b81f0" data-block-id="6245d58516ef52eecd986189d6e0eb70"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre class="python" style="font-size: 20px; line-height: 24px; tab-size: 4;"><code data-line-numbers="">&gt;&gt;&gt; spam = ['cat', 'bat', 'rat', 'cat', 'hat', 'cat']
+&gt;&gt;&gt; spam.remove('cat')
+&gt;&gt;&gt; spam
+['bat', 'rat', 'cat', 'hat', 'cat']</code></pre></div></div></section><section data-transition="fade" data-auto-animate="" data-id="ddbc5c33fc0fa51e760769bd21c6e83b"><div class="sl-block" data-block-type="text" style="height: auto; width: 797.229px; left: 65.2045px; top: 52.0089px;" data-name="text-76ddde" data-block-id="88da4c6179acfbef4b13024897d0346e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>Sorting values in lists using the <code>sort()</code> method</h2></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 802.94px; height: 305.439px; left: 106.947px; top: 320.741px;" data-name="code-1b81f0" data-block-id="f2e7bac7c98b0aef9d5c40b494d7b400"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre class="python" style="font-size: 20px; line-height: 24px; tab-size: 4;"><code data-line-numbers="">&gt;&gt;&gt; spam = [2, 5, 3.14, 1, -7]
+&gt;&gt;&gt; spam.sort()
+&gt;&gt;&gt; spam
+[-7, 1, 2, 3.14, 5]
+&gt;&gt;&gt; spam = ['ants', 'cats', 'dogs', 'badgers', 'elephants']
+&gt;&gt;&gt; spam.sort()
+&gt;&gt;&gt; spam
+['ants', 'badgers', 'cats', 'dogs', 'elephants']
+&gt;&gt;&gt; spam.sort(reverse=True)
+&gt;&gt;&gt; spam
+['elephants', 'dogs', 'cats', 'badgers', 'ants']</code></pre></div></div></section><section data-transition="fade" data-auto-animate="" data-id="1eb8cbc4ef0e0a3e5e9124c8c6704d6d"><div class="sl-block" data-block-type="text" style="height: auto; width: 797.229px; left: 65.2045px; top: 52.0089px;" data-name="text-76ddde" data-block-id="e614276d49f3f392d020c85075ae6929"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>Sorting values in lists using the <code>sort()</code> method</h2></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 824.695px; height: 190.137px; left: 67.6525px; top: 328.355px;" data-name="code-1b81f0" data-block-id="fb1d7febea31ad1152cb92e9031b6966"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre class="python" style="font-size: 20px; line-height: 24px; tab-size: 4;"><code data-line-numbers="">&gt;&gt;&gt; spam = [1, 3, 2, 4, 'Alice', 'Bob']
+&gt;&gt;&gt; spam.sort()
+Traceback (most recent call last):
+  File "&lt;pyshell#70&gt;", line 1, in &lt;module&gt;
+    spam.sort()
+TypeError: '&lt;' not supported between instances of 'str' and 'int'</code></pre></div></div></section><section data-transition="fade" data-auto-animate="" data-id="3ec2fe05078982f09c1dfdb86a94438d"><div class="sl-block" data-block-type="text" style="height: auto; width: 797.229px; left: 65.2045px; top: 52.0089px;" data-name="text-76ddde" data-block-id="9870a16e8f1c518c64e2a81fae534154"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>Sorting values in lists using the <code>sort()</code> method</h2></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 836.66px; height: 247.788px; left: 67.6525px; top: 328.355px;" data-name="code-1b81f0" data-block-id="473a4148961d581ec3e10c451278c400"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre class="python" style="font-size: 20px; line-height: 24px; tab-size: 4;"><code data-line-numbers="">&gt;&gt;&gt; spam = ['Alice', 'ants', 'Bob', 'badgers', 'Carol', 'cats']
+&gt;&gt;&gt; spam.sort()
+&gt;&gt;&gt; spam
+['Alice', 'Bob', 'Carol', 'ants', 'badgers', 'cats']
+&gt;&gt;&gt; spam = ['a', 'z', 'A', 'Z']
+&gt;&gt;&gt; spam.sort(key=str.lower)
+&gt;&gt;&gt; spam
+['a', 'A', 'z', 'Z']</code></pre></div></div></section><section data-transition="fade" data-auto-animate="" data-id="040a3f4d510bd7cf518aa81466432dcc"><div class="sl-block" data-block-type="text" style="height: auto; width: 797.229px; left: 65.2045px; top: 52.0089px;" data-name="text-76ddde" data-block-id="c17f3771d39aee58babe52fa9ea35e09"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>Reversing values in lists using the <code>reverse()</code> method</h2></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 836.66px; height: 247.788px; left: 67.6525px; top: 328.355px;" data-name="code-1b81f0" data-block-id="260ab13dea3200f6d1b26aa6655dd57a"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre class="python" style="font-size: 20px; line-height: 24px; tab-size: 4;"><code data-line-numbers="">&gt;&gt;&gt; spam = ['cat', 'dog', 'moose']
+&gt;&gt;&gt; spam.reverse()
+&gt;&gt;&gt; spam
+['moose', 'dog', 'cat']</code></pre></div></div></section><section data-transition="fade" data-auto-animate="" data-id="b42321a34d0cb3ddf7c5e8be5dc796ac"><div class="sl-block" data-block-type="text" style="height: auto; width: 797.229px; left: 65.2045px; top: 52.0089px;" data-name="text-76ddde" data-block-id="18e19f22a9ae4062308955b7e40b438a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>Sequence Data types</h2></div></div>
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 291px;" data-name="text-0662a6" data-block-id="b6b6c08e6ee6eb4ddd08e9bc6b22f3a2"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;"><p>The Python sequence data types include lists, strings, range objects returned by <code>range()</code>, and tuples</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 446.89px;" data-name="text-076de0" data-block-id="8b0163057d14b37c9d1f828691a3bc87"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;"><p>Many of the things you can do with lists can also be done with strings and other values of sequence types: indexing; slicing; and using them with <code>for</code> loops, with <code>len()</code>, and with the <code>in</code> and <code>not in</code> operators.</p></div></div></section><section data-transition="fade" data-auto-animate="" data-id="702b73e813896f964f14cec4c67610ca"><div class="sl-block" data-block-type="text" style="height: auto; width: 797.229px; left: 65.2045px; top: 52.0089px;" data-name="text-76ddde" data-block-id="f12f9991eba88f176f7a21f309ecc5a2"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>Sequence Data types</h2></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 517.404px; height: 457.725px; left: 230px; top: 176.069px;" data-name="code-20e4ab" data-block-id="32e48488ed097260d81fca41588bf51a"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre class="python" style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">&gt;&gt;&gt; name = 'Zophie'
+&gt;&gt;&gt; name[0]
+'Z'
+&gt;&gt;&gt; name[-2]
+'i'
+&gt;&gt;&gt; name[0:4]
+'Zoph'
+&gt;&gt;&gt; 'Zo' in name
+True
+&gt;&gt;&gt; 'z' in name
+False
+&gt;&gt;&gt; 'p' not in name
+False
+&gt;&gt;&gt; for i in name:
+...     print('* * * ' + i + ' * * *')
+
+* * * Z * * *
+* * * o * * *
+* * * p * * *
+* * * h * * *
+* * * i * * *
+* * * e * * *</code></pre></div></div></section><section data-transition="fade" data-auto-animate="" data-id="0b576ca03b236a2a01c803edfa875441"><div class="sl-block" data-block-type="text" style="height: auto; width: 797.229px; left: 65.2045px; top: 52.0089px;" data-name="text-76ddde" data-block-id="deb3b397d0673597ea6c5dc96335cd72"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>Sequence Data types</h2></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 517.404px; height: 457.725px; left: 230px; top: 176.069px;" data-name="code-20e4ab" data-block-id="a7413f689ddf7747ddecae8025d4e171"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre class="python" style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">&gt;&gt;&gt; name = 'Zophie'
+&gt;&gt;&gt; name[0]
+'Z'
+&gt;&gt;&gt; name[-2]
+'i'
+&gt;&gt;&gt; name[0:4]
+'Zoph'
+&gt;&gt;&gt; 'Zo' in name
+True
+&gt;&gt;&gt; 'z' in name
+False
+&gt;&gt;&gt; 'p' not in name
+False
+&gt;&gt;&gt; for i in name:
+...     print('* * * ' + i + ' * * *')
+
+* * * Z * * *
+* * * o * * *
+* * * p * * *
+* * * h * * *
+* * * i * * *
+* * * e * * *</code></pre></div></div></section><section data-transition="fade" data-auto-animate="" data-id="e7a5a9f6105194be3e80f00b0a7e7d5e"><div class="sl-block" data-block-type="text" style="height: auto; width: 797.229px; left: 65.2045px; top: 52.0089px;" data-name="text-76ddde" data-block-id="b90be07c9323244bcb1dcef59a9defed"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);">
+<h2>Mutable and Immutable Data types</h2>
+
+<p> </p>
+</div></div>
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 303.306px;" data-name="text-ec6e53" data-block-id="9e218dcd0dfb044844e199d7c5e33582"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;"><p>A list value is a mutable data type: it can have values added, removed, or changed.</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 457.768px;" data-name="text-e010bc" data-block-id="6e7ac4f149adbccd1a4b5786213628ff"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;"><p>However, a string is immutable: it cannot be changed.</p></div></div></section><section data-transition="fade" data-auto-animate="" data-id="c61981fbe22da249e7840d5bdf51cfeb"><div class="sl-block" data-block-type="text" style="height: auto; width: 797.229px; left: 65.2045px; top: 52.0089px;" data-name="text-76ddde" data-block-id="52d77cdea93d5d67290111f726c37e0c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);">
+<h2>Mutable and Immutable Data types</h2>
+
+<p> </p>
+</div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 605.512px; height: 197.751px; left: 161.063px; top: 318.566px;" data-name="code-cfd671" data-block-id="5795cbe19f8bb14296deb167a9d7b8c4"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre class="python" style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">&gt;&gt;&gt; name = 'Zophie a cat'
+&gt;&gt;&gt; name[7] = 'A'
+Traceback (most recent call last):
+  File "&lt;pyshell#50&gt;", line 1, in &lt;module&gt;
+    name[7] = 'A'
+TypeError: 'str' object does not support item assignment</code></pre></div></div></section><section data-transition="fade" data-auto-animate="" data-id="5228587003ead8a16ad09157e7ea88a1"><div class="sl-block" data-block-type="text" style="height: auto; width: 797.229px; left: 65.2045px; top: 52.0089px;" data-name="text-76ddde" data-block-id="aec21e50926ad5a9717b3d640f963033"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);">
+<h2>Mutable and Immutable Data types</h2>
+
+<p> </p>
+</div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 605.512px; height: 197.751px; left: 161.063px; top: 318.566px;" data-name="code-cfd671" data-block-id="18841651978246a36bfa6f277460e6c1"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre class="python" style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">&gt;&gt;&gt; name = 'Zophie a cat'
+&gt;&gt;&gt; newName = name[0:7] + 'A' + name[8:12]
+&gt;&gt;&gt; name
+'Zophie a cat'
+&gt;&gt;&gt; newName
+'Zophie A cat'</code></pre></div></div></section><section data-transition="fade" data-auto-animate="" data-id="e745da01856ea4dfb9e2be33eb392731"><div class="sl-block" data-block-type="text" style="height: auto; width: 797.229px; left: 65.2045px; top: 52.0089px;" data-name="text-76ddde" data-block-id="8e6eaa6bf44db7a50a9927c627f615e5"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);">
+<h2>Mutable and Immutable Data types</h2>
+
+<p> </p>
+</div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 605.512px; height: 197.751px; left: 161.063px; top: 318.566px;" data-name="code-cfd671" data-block-id="61b6a84ec5b8e966eed4224b876769ae"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre class="python" style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">&gt;&gt;&gt; eggs = [1, 2, 3]
+&gt;&gt;&gt; eggs[1] = 5
+&gt;&gt;&gt; eggs
+[1, 5, 3]</code></pre></div></div></section><section data-transition="fade" data-auto-animate="" data-id="c373659d761b009a3d5bf6193d3b0e0a"><div class="sl-block" data-block-type="text" style="height: auto; width: 797.229px; left: 65.2045px; top: 52.0089px;" data-name="text-76ddde" data-block-id="c10ed9d33a24edc43c6d22434c5b000d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>The Tuple Data type</h2></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 605.512px; height: 197.751px; left: 161.063px; top: 318.566px;" data-name="code-cfd671" data-block-id="11aad19dde0cfcf7dc5391ba0fbc1fd5"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre class="python" style="font-size: 20px; line-height: 24px; tab-size: 4;"><code data-line-numbers="">&gt;&gt;&gt; eggs = ('hello', 42, 0.5)
+&gt;&gt;&gt; eggs[0]
+'hello'
+&gt;&gt;&gt; eggs[1:3]
+(42, 0.5)
+&gt;&gt;&gt; len(eggs)
+3</code></pre></div></div></section><section data-transition="fade" data-auto-animate="" data-id="619bcc9b13f41314d1adb5d59ca63de8"><div class="sl-block" data-block-type="text" style="height: auto; width: 797.229px; left: 65.2045px; top: 52.0089px;" data-name="text-76ddde" data-block-id="cf0aa54473bd54c87cbea23103d02925"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>The Tuple Data type</h2></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 742.569px; height: 179.259px; left: 161.063px; top: 318.566px;" data-name="code-cfd671" data-block-id="ec4be25d13de7350db53ac62a86977bb"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre class="python" style="font-size: 20px; line-height: 24px; tab-size: 4;"><code data-line-numbers="">&gt;&gt;&gt; eggs = ('hello', 42, 0.5)
+&gt;&gt;&gt; eggs[1] = 99
+Traceback (most recent call last):
+  File "&lt;pyshell#5&gt;", line 1, in &lt;module&gt;
+    eggs[1] = 99
+TypeError: 'tuple' object does not support item assignment</code></pre></div></div></section><section data-transition="fade" data-auto-animate="" data-id="f47aa6c1fa5010603f0c3b28d0efcfe7"><div class="sl-block" data-block-type="text" style="height: auto; width: 797.229px; left: 65.2045px; top: 52.0089px;" data-name="text-76ddde" data-block-id="a7221a05bc0a8b9a978ca68f5dbb24a3"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>The Tuple Data type</h2></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 372.732px; height: 133.573px; left: 277.453px; top: 316.391px;" data-name="code-cfd671" data-block-id="18251f95c503abab9a2294da73316e81"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre class="python" style="font-size: 20px; line-height: 24px; tab-size: 4;"><code data-line-numbers="">&gt;&gt;&gt; type(('hello',))
+&lt;class 'tuple'&gt;
+&gt;&gt;&gt; type(('hello'))
+&lt;class 'str'&gt;</code></pre></div></div></section><section data-transition="fade" data-auto-animate="" data-id="8b27b3782c1268ee38dbd6a7953fb99e"><div class="sl-block" data-block-type="text" style="height: auto; width: 797.229px; left: 65.2045px; top: 52.0089px;" data-name="text-76ddde" data-block-id="e9d0f45f0b7131c4cb73012679df3da1"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>Converting types</h2></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 439.085px; height: 187.961px; left: 244.276px; top: 305.513px;" data-name="code-cfd671" data-block-id="122b4f4c1b70a59fceb0550357650b25"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre class="python" style="font-size: 20px; line-height: 24px; tab-size: 4;"><code data-line-numbers="">&gt;&gt;&gt; tuple(['cat', 'dog', 5])
+('cat', 'dog', 5)
+&gt;&gt;&gt; list(('cat', 'dog', 5))
+['cat', 'dog', 5]
+&gt;&gt;&gt; list('hello')
+['h', 'e', 'l', 'l', 'o']</code></pre></div></div></section><section data-transition="fade" data-auto-animate="" data-id="0a53f31587e78a4d1a9a463dd11f0e42"><div class="sl-block" data-block-type="text" style="height: auto; width: 797.229px; left: 65.2045px; top: 52.0089px;" data-name="text-76ddde" data-block-id="b8fef87d9db067ddd64279c75cb02f7d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>References</h2></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 823.412px; height: 253.227px; left: 95.2532px; top: 282.67px;" data-name="code-cfd671" data-block-id="27d049011cfcff94b8cb98314229b3bf"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre class="python" style="font-size: 20px; line-height: 24px; tab-size: 4;"><code data-line-numbers="">&gt;&gt;&gt; spam = [0, 1, 2, 3, 4, 5]
+&gt;&gt;&gt; cheese = spam # The reference is being copied, not the list.
+&gt;&gt;&gt; cheese[1] = 'Hello!' # This changes the list value.
+&gt;&gt;&gt; spam
+[0, 'Hello!', 2, 3, 4, 5]
+&gt;&gt;&gt; cheese # The cheese variable refers to the same list.
+[0, 'Hello!', 2, 3, 4, 5]</code></pre></div></div></section><section data-transition="fade" data-auto-animate="" data-id="c79dd66b3ad3eef8e6c5ae56f617c629"><div class="sl-block" data-block-type="text" style="height: auto; width: 797.229px; left: 65.2045px; top: 52.0089px;" data-name="text-76ddde" data-block-id="1506d9d0f4e070f775ae7d46446bfd51"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>References</h2></div></div>
+
+<div class="sl-block" data-block-type="image" style="width: 660.977px; height: 375.749px; left: 133.331px; top: 204.547px;" data-name="image-b91e60" data-block-id="bb1db1138b353e7c8c7df5b5eb44b811"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="387" data-natural-height="220" data-src="introduction-to-python-l5/9ce4fe67e76cdc6a6bf48f2a31eda5cb.png"></div></div></section><section data-transition="fade" data-auto-animate="" data-id="6af1950607333eed7fd0ca818cd088af"><div class="sl-block" data-block-type="text" style="height: auto; width: 797.229px; left: 65.2045px; top: 52.0089px;" data-name="text-76ddde" data-block-id="ada9e7df195e54bfdaa79354e49913d2"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>References</h2></div></div>
+
+<div class="sl-block" data-block-type="image" style="width: 666.904px; height: 348.423px; left: 130.367px; top: 231.808px;" data-name="image-77b6f3" data-block-id="3f547993f5f374c46e915b7bb28dad42"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="490" data-natural-height="256" data-src="introduction-to-python-l5/e82006cf0de9e93a3ae100ad62f09bff.png"></div></div></section><section data-transition="fade" data-auto-animate="" data-id="59dffa2a49ed1c9542262dd173d89bc5"><div class="sl-block" data-block-type="text" style="height: auto; width: 797.229px; left: 65.2045px; top: 52.0089px;" data-name="text-76ddde" data-block-id="d3886ab32b8c7feb780d12e011e7f94c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>References</h2></div></div>
+
+<div class="sl-block" data-block-type="image" style="width: 661.225px; height: 346.806px; left: 133.207px; top: 225.546px;" data-name="image-a19bca" data-block-id="cd69f8d289915c020db5390e1eb74568"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="490" data-natural-height="257" data-src="introduction-to-python-l5/1103fa55ef463254d30f926d304d84c3.png"></div></div></section><section data-transition="fade" data-auto-animate="" data-id="f93aaed1b4ce2f67cdf242d01521f80f"><div class="sl-block" data-block-type="text" style="height: auto; width: 797.229px; left: 65.2045px; top: 52.0089px;" data-name="text-76ddde" data-block-id="8deaad6ccda2b4a443fc836980292e8b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>Identity and the <code>id()</code> function</h2></div></div>
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 211.934px;" data-name="text-d7ff4e" data-block-id="ab3c9d582593893c7645de313f72c637"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;"><p>You may be wondering why the weird behavior with mutable lists in the previous section doesn’t happen with immutable values like integers or strings.</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 422.959px;" data-block-id="837c29143555e0ea21e6b7116040ff74" data-name="text-2edd35"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;"><p>We can use Python’s <code>id()</code> function to understand this. All values in Python have a unique identity that can be obtained with the <code>id()</code> function.</p></div></div></section><section data-transition="fade" data-auto-animate="" data-id="c2a28eec55e691e3f1b937d83dcc01c9"><div class="sl-block" data-block-type="text" style="height: auto; width: 797.229px; left: 65.2045px; top: 52.0089px;" data-name="text-76ddde" data-block-id="859d13a517f5eaac279403d06030f588"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>Identity and the <code>id()</code> function</h2></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 901.383px; height: 185.785px; left: 29.3085px; top: 293.547px;" data-name="code-eccbb3" data-block-id="f3010940b8e6c3c4b7dad66d830fbd16"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre class="python" style="font-size: 20px; line-height: 24px; tab-size: 4;"><code data-line-numbers="">&gt;&gt;&gt; id('Howdy') # The returned number will be different on your machine.
+44491136</code></pre></div></div></section><section data-transition="fade" data-auto-animate="" data-id="941cf24b947a7f5659a6c25435149774"><div class="sl-block" data-block-type="text" style="height: auto; width: 797.229px; left: 65.2045px; top: 52.0089px;" data-name="text-76ddde" data-block-id="120ea599738c0a56cc6acad2781612aa"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>Identity and the <code>id()</code> function</h2></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 915.524px; height: 185.785px; left: 15.1677px; top: 292.459px;" data-name="code-eccbb3" data-block-id="383a25a37590359f60c608d686ae3c3c"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre class="python" style="font-size: 20px; line-height: 24px; tab-size: 4;"><code data-line-numbers="">&gt;&gt;&gt; bacon = 'Hello'
+&gt;&gt;&gt; id(bacon)
+44491136
+&gt;&gt;&gt; bacon += ' world!' # A new string is made from 'Hello' and ' world!'.
+&gt;&gt;&gt; id(bacon) # bacon now refers to a completely different string.
+44609712</code></pre></div></div></section><section data-transition="fade" data-auto-animate="" data-id="cdff4d7143f8b38284672d3f2293233f"><div class="sl-block" data-block-type="text" style="height: auto; width: 797.229px; left: 65.2045px; top: 52.0089px;" data-name="text-76ddde" data-block-id="49f38d5b2e137a3b62613368a9e63bcd"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>Identity and the <code>id()</code> function</h2></div></div>
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 232.602px;" data-name="text-bbee49" data-block-id="6b6d88e91becb1f99d8539025be385aa"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;"><p>However, lists can be modified because they are mutable objects.</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 365.308px;" data-name="text-3b06a2" data-block-id="9324264fcf89ce5059f2e74aee75fbd3"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;"><p>The append() method doesn’t create a new list object; it changes the existing list object.</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 498.308px;" data-name="text-19efaa" data-block-id="d2916ec7e5cea95c8158b03a56fa63fd"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;"><p>We call this “modifying the object in-place.”  </p></div></div></section><section data-transition="fade" data-auto-animate="" data-id="b33df4e847c1702eb5bf0dfa0939f64f"><div class="sl-block" data-block-type="text" style="height: auto; width: 797.229px; left: 65.2045px; top: 52.0089px;" data-name="text-76ddde" data-block-id="0ffefceec86edec75d248e9215628054"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>Identity and the <code>id()</code> function</h2></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 784.993px; height: 243.437px; left: 87.5035px; top: 285.933px;" data-name="code-c6e3ea" data-block-id="6909079483c1a97e180512b5bd1018f8"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre class="python" style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">&gt;&gt;&gt; eggs = ['cat', 'dog'] # This creates a new list.
+&gt;&gt;&gt; id(eggs)
+35152584
+&gt;&gt;&gt; eggs.append('moose') # append() modifies the list "in place".
+&gt;&gt;&gt; id(eggs) # eggs still refers to the same list as before.
+35152584
+&gt;&gt;&gt; eggs = ['bat', 'rat', 'cow'] # This creates a new list, which has a new
+identity.
+&gt;&gt;&gt; id(eggs) # eggs now refers to a completely different list.
+44409800</code></pre></div></div></section><section data-transition="fade" data-auto-animate="" data-id="c2a6fbfe77083b98b2b7a597f56c4b21"><div class="sl-block" data-block-type="text" style="height: auto; width: 797.229px; left: 65.2045px; top: 52.0089px;" data-name="text-76ddde" data-block-id="f1055098a634445070659e78737493d5"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>Passing references</h2></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 392.496px; height: 165.118px; left: 283.752px; top: 267.441px;" data-name="code-c6e3ea" data-block-id="5cd94737abe10a6c4a4752c8cf86fe54"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre class="python" style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">def eggs(someParameter):
+    someParameter.append('Hello')
+
+spam = [1, 2, 3]
+eggs(spam)
+print(spam)</code></pre></div></div>
+<div class="sl-block" data-block-type="code" style="width: 251.223px; height: 87.8873px; left: 290.914px; top: 491.519px;" data-name="code-38efa6" data-block-id="51f60cde2a53047d5caef30021aa27ef"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 12;"><pre class="python" style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">Output:
+
+[1, 2, 3, 'Hello']</code></pre></div></div></section><section data-transition="fade" data-auto-animate="" data-id="f7c9060331f7bc698fab727423e6dfe8"><div class="sl-block" data-block-type="text" style="height: auto; width: 797.229px; left: 65.2045px; top: 52.0089px;" data-name="text-76ddde" data-block-id="3cff549b137af1371a82c052cd8c7de8"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>Passing references</h2></div></div>
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 330.5px;" data-name="text-715b03" data-block-id="dea0ab10b2129674bc8746404e4562c3"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;"><p>Keep this behavior in mind: forgetting that Python handles list and dictionary variables this way can lead to confusing bugs.</p></div></div></section><section data-transition="fade" data-auto-animate="" data-id="fbfc48b22f3cab30802e296bc4c9dc04"><div class="sl-block" data-block-type="text" style="height: auto; width: 797.229px; left: 81.3855px; top: 42.2191px;" data-name="text-76ddde" data-block-id="b5d9cff0a3c0314e5013ae70d423a9c0"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>The <code>copy()</code> and <code>deepcopy()</code> functions</h2></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 699.06px; height: 292.386px; left: 130.47px; top: 241.335px;" data-name="code-71b423" data-block-id="7b2a5a0f90177cc6de2ada98b44fb067"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre class="python" style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">&gt;&gt;&gt; import copy
+&gt;&gt;&gt; spam = ['A', 'B', 'C', 'D']
+&gt;&gt;&gt; id(spam)
+44684232
+&gt;&gt;&gt; cheese = copy.copy(spam)
+&gt;&gt;&gt; id(cheese) # cheese is a different list with different identity.
+44685832
+&gt;&gt;&gt; cheese[1] = 42
+&gt;&gt;&gt; spam
+['A', 'B', 'C', 'D']
+&gt;&gt;&gt; cheese
+['A', 42, 'C', 'D']</code></pre></div></div></section><section data-transition="fade" data-auto-animate="" data-id="165ef3755f8dda27c0e20f6059cdfc4c">
+
+<div class="sl-block" data-block-type="image" style="width: 700.424px; height: 359.458px; left: 151.855px; top: 212.693px;" data-name="image-34488a" data-block-id="853539a9384775879f3d0f2dab024b05"><div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="606" data-natural-height="311" data-src="introduction-to-python-l5/db90b600d737ba3864a790a260d4ea7b.png"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 797.229px; left: 81.3855px; top: 42.2191px;" data-name="text-76ddde" data-block-id="1ebd8c58be82c1c194f791e66205d390"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; color: rgb(164, 194, 244);"><h2>The <code>copy()</code> and <code>deepcopy()</code> functions</h2></div></div></section><section data-transition="fade" data-auto-animate="" data-id="1548dcb38334e402f52dc7f608f145b5">
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 797.229px; left: 81.3855px; top: 42.2191px;" data-name="text-76ddde" data-block-id="3c3e6edf8191ba3f7d0d0d4d581652b6"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>The <code>copy()</code> and <code>deepcopy()</code> functions</h2></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 330.5px;" data-name="text-7c51ef" data-block-id="53c2f9fb8597a2e314459da84374c013"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;"><p>If the list you need to copy contains lists, then use the <code>copy.deepcopy()</code> function instead of <code>copy.copy()</code>. The <code>deepcopy()</code> function will copy these inner lists as well.</p></div></div></section><section data-transition="fade" data-auto-animate="" data-id="bcb80c85496396d5c78c58d4f4a8939b">
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 797.229px; left: 81.3855px; top: 42.2191px;" data-name="text-76ddde" data-block-id="5bd7ba8565d214dc7b70d26827cad2a9"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>Conway's Game of Life</h2></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 318.535px;" data-name="text-23129f" data-block-id="24d5985f2bbc3bfdc9199c6552f44f9a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;"><p>Complete the activity at <a href="https://itp.zohair.dev/activities/zigzag" target="_blank">https://itp.zohair.dev/activities/conways-game-of-life</a></p></div></div></section><section data-transition="fade" data-auto-animate="" data-id="ce86e505e8f5796df480227a974c29c8">
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 797.229px; left: 81.3855px; top: 42.2191px;" data-name="text-76ddde" data-block-id="840445bee2db5d6124aebdfd9cb7091b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>Summary</h2></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 330.5px;" data-name="text-c65376" data-block-id="f6205f4f958569704eeb1adc2e861d7d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;"><ul>
+	<li>Lists can store multiple values</li>
+	<li>Lists are mutable</li>
+	<li>Tuple and strings are immutable</li>
+</ul></div></div></section><section data-transition="fade" data-auto-animate="" data-id="b92d9008aa42b40a7ec8c5f2edcf4df2">
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 797.229px; left: 81.3855px; top: 42.2191px;" data-name="text-76ddde" data-block-id="de84e0cd1c1e35b97b516ff84a241919"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(164, 194, 244);"><h2>Homework</h2></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 330.5px;" data-name="text-c65376" data-block-id="7713b30332400955360de60e6ed2060b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;"><p>You can find today's homework at <a href="https://itp.zohair.dev/homeworks/collatz-sequence" target="_blank">https://itp.zohair.dev/homeworks/coin-flip-streaks</a></p></div></div></section>
+			</div>
+		</div>
+
+		<script>
+			var SLConfig = {"deck": {"id":3223660,"slug":"introduction-to-python-l5","title":"Introduction to Python - L5","description":"","width":960,"height":700,"margin":0.05,"visibility":"all","published_at":"2024-07-08T12:18:20.234Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/16f83eacec64a21a54577a23ec202e98/thumb.jpg?1720441140","view_count":0,"user":{"id":2683700,"username":"zohairulhasan","name":"Zohair Ul Hasan","description":null,"thumbnail_url":"https://graph.facebook.com/v5.0/3962896787259490/picture?access_token=EAACEyfWCFtgBOZBY9ybVEqQZAinKYNsZBuLHhW4KCxcbsyU2v4VwWCgnhK2AFGj9698akoSuok5l7ZBJoszQ0ZCec1JJbukq3nXG0ZCte3j4yLls9fZCoKZA218tLgQKqgpzzmaUoVliqhauOhD5gpZCjwZBeeTufrJycNXC7cOkAIkufXBJqu0XnEwoTFELVZAHFxh2ttSxVXNHuDR7p0aQv5VrmGBZAfaGDWZCDEOVWky8apLQiQXjdZAr2r","account_type":"lite","team_id":null,"settings":{"id":57289514,"present_controls":false,"present_upsizing":true,"present_pointer":true,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"none","transition":"fade","theme_id":null,"theme_font":"helvetica","theme_color":"black-mint","auto_slide_interval":0,"comments_enabled":false,"forking_enabled":false,"rolling_links":false,"center":false,"shuffle":false,"should_loop":false,"share_notes":false,"slide_number":true,"slide_count":72,"rtl":false,"version":2,"collaborative":false,"deck_user_editor_limit":1,"data_updated_at":1720470779237,"font_typekit":null,"font_google":null,"time_limit":null,"navigation_mode":"default","upsizing_enabled":true,"language":"en","notes":{}}};
+
+
+			// Use local fonts
+			SLConfig.fonts_url = 'lib/fonts/';
+		</script>
+
+		<script src="lib/reveal.js"></script>
+		<script src="lib/reveal-plugins.js"></script>
+		<script src="lib/offline.js"></script>
+
+		<!-- Initialize the presentation -->
+		<script>
+			Reveal.initialize({
+				width: 960,
+				height: 700,
+				margin: 0.05,
+				
+
+				hash: true,
+				controls: true,
+				progress: true,
+				mouseWheel: false,
+				showNotes: false,
+				slideNumber: true,
+				fragmentInURL: true,
+
+				autoSlide: 0,
+				autoSlideStoppable: true,
+
+				autoAnimateMatcher: SL.deck.AutoAnimate.matcher,
+
+				scrollActivationWidth: null,
+
+				center: false,
+				shuffle: false,
+				loop: false,
+				rtl: false,
+				navigationMode: "default",
+
+				transition: "fade",
+				backgroundTransition: "none",
+
+				highlight: {
+					escapeHTML: false
+				},
+
+				plugins: [ RevealZoom, RevealNotes, RevealMarkdown, RevealHighlight ]
+			});
+		</script>
+
+		
+
+
+	</body>
+</html>
